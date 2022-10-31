@@ -1,17 +1,15 @@
-//import './App.css';
+import './App.css';
 //import ColorBox from './components/ColorBox';
 //import Counter from './components/Counter';
-//import AlbumFeature from './features/pages';
-import TodoFeature from './features/Todo/pages';
+import { Link, NavLink, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+
 
 function App() {
 
   return (
     <div className="App">
-      {/*<AlbumFeature /> */}
-      {/*<ColorBox />*/}
-      {/*<Counter />*/}
-      <TodoFeature />
+      <Header/>
     </div>
   );
 }
