@@ -1,17 +1,14 @@
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
 import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import CodeIcon from '@material-ui/icons/Code';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import TextField from '@material-ui/core/TextField';
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
 import Register from '../../features/Auth/components/Register';
 
 const useStyles = makeStyles((theme) => ({
@@ -55,7 +52,7 @@ export default function Header() {
         </Toolbar>
       </AppBar>
 
-      <Dialog disableBackdropClick disableEscapeKeyDown open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
+      <Dialog dis disableEscapeKeyDown open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
         <DialogContent>
           <Register/>
         </DialogContent>
