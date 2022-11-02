@@ -1,10 +1,12 @@
 import './App.css';
 //import ColorBox from './components/ColorBox';
 //import Counter from './components/Counter';
-import { Link, NavLink, Route, Routes } from 'react-router-dom';
+//import { Link, NavLink, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import { useEffect } from 'react';
 import productApi from './api/productApi';
+//import { Button } from '@material-ui/core';
+//import { useSnackbar } from 'notistack';
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
 
     fetchProducts();
   }, []);
+
+  
 
   return (
     <div className="App">
