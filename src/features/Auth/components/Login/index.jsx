@@ -1,5 +1,5 @@
 import { unwrapResult } from '@reduxjs/toolkit';
-import { useSnackbar } from 'notistack';
+//import { useSnackbar } from 'notistack';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { useDispatch } from 'react-redux';
@@ -13,7 +13,7 @@ Login.propTypes = {
 function Login(props) {
     const dispatch = useDispatch();
 
-    const {enqueueSnackbar} = useSnackbar();
+    //const {enqueueSnackbar} = useSnackbar();
 
     const handleSubmit = async (values) => {       
         try {
@@ -29,7 +29,7 @@ function Login(props) {
     //        enqueueSnackbar('Register successfully!!!', {variant: 'success'});
         } catch (error) {
             console.log('Failed to register', error);
-            enqueueSnackbar(error.message, { variant: 'error'});
+    //        enqueueSnackbar(error.message, { variant: 'error'});
         }
     };
 
