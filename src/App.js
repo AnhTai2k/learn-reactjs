@@ -5,6 +5,7 @@ import './App.css';
 import Header from './components/Header';
 import { useEffect } from 'react';
 import productApi from './api/productApi';
+import PostFiltersForm from './features/PostFiltersForm';
 //import { Button } from '@material-ui/core';
 //import { useSnackbar } from 'notistack';
 
@@ -22,10 +23,14 @@ function App() {
     fetchProducts();
   }, []);
 
+function handleFiltersChange(newFilters) {
+  console.log('New Filters: ', newFilters);
+}
   
 
   return (
     <div className="App">
+      <PostFiltersForm onSubmit={handleFiltersChange} />
       <Header/>
     </div>
   );
