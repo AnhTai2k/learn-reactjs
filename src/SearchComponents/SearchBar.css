@@ -1,18 +1,20 @@
 .searchInputs {
-    margin-top: 105px;
-    display: flex;
-  }
+  margin-top: 105px;
+  display: flex;
+  align-items: center;
+}
   
   .search input {
+    position: relative;
     background-color: white;
     border: 0;
-    border-radius: 2px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
     font-size: 18px;
     padding: 15px;
     height: 30px;
-    width: 300px;
+    width: 600px;
   }
   
   .searchIcon {
@@ -21,6 +23,11 @@
     background-color: white;
     display: grid;
     place-items: center;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    position: inherit;
+    text-align: center;
+    
   }
   
   input:focus {
