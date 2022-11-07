@@ -5,7 +5,8 @@ import './App.css';
 import Header from './components/Header';
 import { useEffect } from 'react';
 import productApi from './api/productApi';
-import PostFiltersForm from './features/PostFiltersForm';
+import SearchBar from './SearchComponents/SearchBar';
+import BookData from './Data.json'
 //import { Button } from '@material-ui/core';
 //import { useSnackbar } from 'notistack';
 
@@ -23,15 +24,13 @@ function App() {
     fetchProducts();
   }, []);
 
-function handleFiltersChange(newFilters) {
-  console.log('New Filters: ', newFilters);
-}
+
   
 
   return (
     <div className="App">
-      <PostFiltersForm onSubmit={handleFiltersChange} />
       <Header/>
+      <SearchBar placeholder="Enter data" data={BookData} />
     </div>
   );
 }
